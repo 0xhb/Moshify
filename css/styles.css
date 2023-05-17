@@ -236,6 +236,11 @@ a {
     background-color: #fff;
 }
 
+.button--strech {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
 .button--outline:hover {
     background-color: var(--color-heading);
     color: #fff;
@@ -505,4 +510,46 @@ a {
         justify-content: center;
         align-items: center;
     }
+}
+
+/* Callout:------------------------------------------- */
+
+.callout {
+    border-radius: 4px;
+    padding: 4rem;
+}
+
+.callout--primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.callout__heading {
+    color: #fff;
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.callout__text {
+    text-align: center;
+}
+.callout .button {
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (min-width: 786px) {
+    .callout .grid--1x2 {
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout__text { 
+        text-align: left;
+    }
+
+    .callout .button {
+        justify-self: start;
+        margin: 0 2rem;
+    }
+
 }
